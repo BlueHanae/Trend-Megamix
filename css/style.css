@@ -3,6 +3,8 @@ strong{
     font-weight: bold;
 }
 .neubrutalism{
+    margin: 0;
+    padding: 0;
     border: 2px solid black;
     font-family: 'Roboto Mono', monospace;
 }
@@ -20,7 +22,6 @@ strong{
 
 /* Nav */
 .neubrutalism__nav{
-    border-right: 2px solid;
     display: flex;
     justify-content: left;
     border-bottom: 2px solid black ;
@@ -112,7 +113,7 @@ strong{
     position: absolute;
     width: 3rem;
     background: #0c9ec7;
-    left: 24%;
+    left: 20%;
     bottom: 17%;
 }
 .neubrutalism__card-exemple-gh{
@@ -122,7 +123,7 @@ strong{
     border: 2px solid black;
     border-radius: 10px;
     position: absolute;
-    right: 24%;
+    right: 20%;
     bottom: 17%;
     width: 3rem;
 }
