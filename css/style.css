@@ -1,0 +1,199 @@
+/* Mobile -600px */
+strong{
+    font-weight: bold;
+}
+.neubrutalism{
+    border: 2px solid black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Header */
+.neubrutalism__header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 2px solid black ;
+    padding: 1rem;
+}
+
+/* Nav */
+.neubrutalism__nav{
+    border-right: 2px solid;
+    display: flex;
+    justify-content: left;
+    border-bottom: 2px solid black ;
+}
+.neubrutalism__nav li{
+    overflow: hidden;
+    transition: 1s all ease;
+    position: relative;
+    padding: 1rem;
+    border-right: 2px solid black;
+}
+.neubrutalism__nav a{
+    text-decoration: none;
+    color: black;
+}
+.neubrutalism__nav li::before{
+    background: #e8f1d7;
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transition: all .6s ease;
+    width:100%;
+    height: 0%;
+}
+.neubrutalism__nav li:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+/* Cards */
+.neubrutalism__cards{
+    background: #d3b6ff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem;
+}
+.neubrutalism__card-analyse{
+    padding: 1rem;
+    background: #fff38e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    border: 2px solid black;
+    box-shadow: 4px 6px 0 black;
+    border-radius: 5px;
+}
+.neubrutalism__card-analyse-title{
+    background: #a7d9f0;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 black;
+    font-weight: bold;
+    padding: .5rem;
+    font-size: 2rem;
+    align-self: center;
+}
+.neubrutalism__card-analyse-text{
+    padding: 1.5rem 1rem 1rem 1rem;
+    line-height: 1.4rem;
+}
+.neubrutalism__card-exemple{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: #f6b6c2;
+    margin: 1rem;
+    padding: .5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 6px 0 black;
+}
+.neubrutalism__card-exemple-img{
+    align-self: center;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.neubrutalism__card-exemple-in{
+    padding: 1rem;
+    box-shadow: 4px 4px black;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    width: 3rem;
+    background: #0c9ec7;
+    left: 24%;
+    bottom: 17%;
+}
+.neubrutalism__card-exemple-gh{
+    padding: 1rem;
+    box-shadow: 4px 4px black;
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    right: 24%;
+    bottom: 17%;
+    width: 3rem;
+}
+.neubrutalism__card-exemple-title{
+    font-size: 1.5rem;
+    align-self: flex-start;
+    font-weight: bold;
+    padding: 2rem 0 .7rem .7rem;
+}
+.neubrutalism__card-exemple-text{
+    align-self: start;
+    padding: 0 0 1.5rem .7rem;
+    font-size: .7rem;
+}
+
+/*little laptop*/
+@media (min-width: 960px)
+{
+    .neubrutalism__cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .neubrutalism__card-analyse{
+        width: 40%;
+        margin: 4rem;
+    }
+    .neubrutalism__card-exemple{
+        margin: 4rem;
+        width: 40%;
+    }
+    .neubrutalism__card-analyse-text{
+        margin: 0 1rem;
+    }
+}
+
+/*normal computer screen*/
+@media (min-width: 1200px){
+    .neubrutalism__card-analyse{
+        width: 40%;
+        margin: 6rem;
+    }
+    .neubrutalism__card-exemple{
+        margin: 6rem;
+        width: 40%;
+    }
+    .neubrutalism__card-analyse-text{
+        margin: 0 3rem;
+    }
+}
+
+/*wide computer screen*/
+@media (min-width: 1400px){
+    .neubrutalism__cards{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .neubrutalism__card-analyse{
+        width: 20%;
+        margin: 8rem;
+    }
+    .neubrutalism__card-exemple{
+        margin-top: 10rem;
+        margin: 8rem;
+        width: 20%;
+    }
+    .neubrutalism__card-analyse-text{
+        margin: 0 2rem;
+    }
+}
